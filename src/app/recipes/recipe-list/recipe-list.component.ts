@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Recipe } from "../recipe";
 import { RecipeService } from "app/recipes/recipe.service";
@@ -18,7 +18,4 @@ recipes: Recipe[] = [];
     this.recipes = this.recipeService.getRecipes();
   }
 
-  onSelected(recipe:Recipe){
-      
-  }
 }
